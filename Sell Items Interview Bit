@@ -1,0 +1,11 @@
+public class Solution {
+    public int solve(int A, int B) {
+    int totalunits = A*5;
+    int weeks = B/totalunits;
+    int rem = B % totalunits;
+    if(rem > 0){
+        weeks++;
+    }
+    return weeks;
+    }
+}
