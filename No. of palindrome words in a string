@@ -1,0 +1,26 @@
+class HelloWorld {
+    public static boolean isPalindrome(String str){
+        String op="";
+        for(int i=str.length()-1;i>=0;i--){
+            op+=str.charAt(i);
+        }
+        if(str.equals(op)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public static void main(String[] args) {
+        int count = 0;
+        String str = "this is level malayalam";
+        String arr[] = str.split(" ");
+        for(int i=0;i<arr.length;i++){
+         String curr = arr[i];
+         if(isPalindrome(curr)){
+             count++;
+         }
+        }
+        System.out.println(count);
+    }
+}
